@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Linea De Tiempo</title>
+</head>
+
+<body>
+    <header>
+        <h1>Linea De Tiempo De los Celulares</h1>
+    </header>
+    <main>
+        <nav>
+            <button onclick="expandAll()">Expand All</button>
+            <button onclick="collapseAll()">Collapse All</button>
+        </nav>
+
+        <section>
+            <div class="item">
+                <div class="header">
+                    <button onclick="toggleItem(this)">
+                        <img src="./img/chevron-right-regular-24.png" alt="Flecha">
+                    </button>
+                    <span class="dot"></span>
+                    <span class="title">
+                        <span class="date">1973</span>
+                        <br>
+                        <strong>Primer teléfono móvil</strong>
+                    </span>
+                </div>
+                <div class="body">
+                    <p>
+                        Martin Cooper de Motorola realiza la primera llamada desde un teléfono móvil. El modelo,
+                        DynaTAC, era muy grande y pesado.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="header">
+                    <button onclick="toggleItem(this)">
+                        <img src="./img/chevron-right-regular-24.png" alt="Flecha">
+                    </button>
+                    <span class="dot"></span>
+                    <span class="title">
+                        <span class="date">1983</span>
+                        <br>
+                        <strong>Lanzamiento del Motorola DynaTAC 8000X</strong>
+                    </span>
+                </div>
+                <div class="body">
+                    <p>El primer teléfono móvil comercial del mundo, pesaba cerca de 1 kg y tenía una batería que duraba
+                        30 minutos de conversación.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="header">
+                    <button onclick="toggleItem(this)">
+                        <img src="./img/chevron-right-regular-24.png" alt="Flecha">
+                    </button>
+                    <span class="dot"></span>
+                    <span class="title">
+                        <span class="date">1992</span>
+                        <br>
+                        <strong>Primer SMS</strong>
+                    </span>
+                </div>
+                <div class="body">
+                    <p>
+                        El primer mensaje de texto fue enviado en el Reino Unido. Decía "Merry Christmas".
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="header">
+                    <button onclick="toggleItem(this)">
+                        <img src="./img/chevron-right-regular-24.png" alt="Flecha">
+                    </button>
+                    <span class="dot"></span>
+                    <span class="title">
+                        <span class="date">1996</span>
+                        <br>
+                        <strong>Nokia 9000 Communicator</strong>
+                    </span>
+                </div>
+                <div class="body">
+                    <p>
+                        Uno de los primeros teléfonos en combinar funciones de teléfono y PDA, marcando el inicio de los
+                        teléfonos inteligentes.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="header">
+                    <button onclick="toggleItem(this)">
+                        <img src="./img/chevron-right-regular-24.png" alt="Flecha">
+                    </button>
+                    <span class="dot"></span>
+                    <span class="title">
+                        <span class="date">1999</span>
+                        <br>
+                        <strong>Lanzamiento del Nokia 3210</strong>
+                    </span>
+                </div>
+                <div class="body">
+                    <p>
+                        Popularizó los juegos en el móvil (como Snake) y el envío de mensajes de texto.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="header">
+                    <button onclick="toggleItem(this)">
+                        <img src="./img/chevron-right-regular-24.png" alt="Flecha">
+                    </button>
+                    <span class="dot"></span>
+                    <span class="title">
+                        <span class="date">2000</span>
+                        <br>
+                        <strong>Primer teléfono con cámara</strong>
+                    </span>
+                </div>
+                <div class="body">
+                    <p>
+                        Sharp lanzó el J-SH04, el primer teléfono con cámara integrada.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="header">
+                    <button onclick="toggleItem(this)">
+                        <img src="./img/chevron-right-regular-24.png" alt="Flecha">
+                    </button>
+                    <span class="dot"></span>
+                    <span class="title">
+                        <span class="date">2007</span>
+                        <br>
+                        <strong>Lanzamiento del iPhone</strong>
+                    </span>
+                </div>
+                <div class="body">
+                    <p>
+                        Apple presenta el iPhone, un dispositivo que revolucionó la industria con su pantalla táctil,
+                        App Store y diseño innovador.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="header">
+                    <button onclick="toggleItem(this)">
+                        <img src="./img/chevron-right-regular-24.png" alt="Flecha">
+                    </button>
+                    <span class="dot"></span>
+                    <span class="title">
+                        <span class="date">2008</span>
+                        <br>
+                        <strong>Lanzamiento de Android</strong>
+                    </span>
+                </div>
+                <div class="body">
+                    <p>
+                        Google lanza el sistema operativo Android, utilizado por la mayoría de los teléfonos
+                        inteligentes del mundo.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="header">
+                    <button onclick="toggleItem(this)">
+                        <img src="./img/chevron-right-regular-24.png" alt="Flecha">
+                    </button>
+                    <span class="dot"></span>
+                    <span class="title">
+                        <span class="date">2010</span>
+                        <br>
+                        <strong>Lanzamiento iPhone 4 y Samsung Galaxy S</strong>
+                    </span>
+                </div>
+                <div class="body">
+                    <p>
+                        Estos modelos popularizaron las pantallas de alta resolución y cámaras de mejor calidad.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="header">
+                    <button onclick="toggleItem(this)">
+                        <img src="./img/chevron-right-regular-24.png" alt="Flecha">
+                    </button>
+                    <span class="dot"></span>
+                    <span class="title">
+                        <span class="date">2020</span>
+                        <br>
+                        <strong>Redes 5G</strong>
+                    </span>
+                </div>
+                <div class="body">
+                    <p>
+                        Los teléfonos compatibles con 5G comienzan a expandirse, permitiendo velocidades de datos mucho
+                        más rápidas y mejor conectividad.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="header">
+                    <button onclick="toggleItem(this)">
+                        <img src="./img/chevron-right-regular-24.png" alt="Flecha">
+                    </button>
+                    <span class="dot"></span>
+                    <span class="title">
+                        <span class="date">2023</span>
+                        <br>
+                        <strong>Pantallas plegables y cámaras debajo de la pantalla</strong>
+                    </span>
+                </div>
+                <div class="body">
+                    <p>
+                        La tecnología de teléfonos con pantallas plegables y cámaras invisibles debajo de la pantalla
+                        comienza a ser más común.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="./app.js"></script>
+
+</html>
